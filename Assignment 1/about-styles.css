@@ -1,0 +1,33 @@
+table, th, td{
+    border: 1px solid black;
+}
+body::after {
+    content: "";
+  background: url(imgs/pup.jpeg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container h1 {
+    margin-left: 45%;
+}
+
+.container p {
+     margin-left: 26em;
+}
+
+.container table {
+    margin-left: 38em;
+}
+
+footer {
+    margin-top: 26em;
+    margin-left: 45%;
+}
