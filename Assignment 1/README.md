@@ -5,7 +5,7 @@ The project is for the first assignment of the web design course and demonstrate
  
 Headings in HTML are defined using the <h1> to <h6> tags.
  
-The *h1> tag defines the most important heading. h6> determines the least important heading.
+The <h1> tag defines the most important heading. h6> determines the least important heading.
  
 The HTML <p> element defines a paragraph.
  
