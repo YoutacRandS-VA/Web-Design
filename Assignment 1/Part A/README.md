@@ -2,6 +2,8 @@
 ======================
 
 The project is for the first assignment of the web design course and demonstrates HTML and CSS. Following are tags I've used while creating the website.
+
+This website 
  
 Headings in HTML are defined using the h1 to h6 tags.
  
