@@ -19,11 +19,11 @@ A favicon image is displayed to the left of the page title in the browser tab.
  
 Tables are used to organize data onto rows or columns in web pages. Each table cell is defined by a <td> and an </td> tag. The content of the table cell is between the <td> and </td> tags. Each table row begins with a <tr> tag and ends with a </tr> tag.
  
-Unordered (bulleted) lists are defined by the HTML <ul> tag.
+Unordered (bulleted) lists are defined by the HTML 'ul' tag.
  
-Document titles are defined by the <title> element.
+Document titles are defined by the 'title' element.
  
-The visible part of the HTML document is between the <body> and the </body> tags.
+The visible part of the HTML document is between the 'body' and the '/body' tags.
 
 
 ## Student Information
