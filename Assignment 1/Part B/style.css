@@ -172,3 +172,9 @@ span{
 .left-column .btn {
     padding-left: 24%;
 }
+
+video {
+    float: right;
+    margin-top: -35%;
+    margin-left: 43%;
+}
