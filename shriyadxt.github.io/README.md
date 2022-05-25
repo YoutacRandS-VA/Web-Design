@@ -39,4 +39,9 @@ This page has unique features with hover effects and figure captions as well. I 
 Finally, this page let's the user connect with me via email or telephone. Features of HTML like tel and mailto in href tells the browser how to use the number.The number within the quotes is the number it will call. similarly with mailto option the default email app on the user's computer opens and suggests sending a message to the email address mentioned in the Mailto link.
 
 
+### Student Information
+=======================
+
+NAME: Shriya Dikshith
+NEU ID: 002921535
 
