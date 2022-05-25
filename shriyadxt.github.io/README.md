@@ -19,4 +19,24 @@ This page of my webiste is the homepage. I have added a short description of mys
 
 ### About me
 
+This section covers all my personal information such as name mail, skills and education. 
+The navigation bar is always the same for all the pages. Some tags which I have added are:
+
+* **downloadbtn** - I gave href as pdf file. So when a user clicks he/she can automatically download the pdf.
+* **skills** - For the cards in the skills section I have added different references links for my certifications.
+* **education** - I have added a border in css file for the extra effect.
+
+### Portfolio
+
+This page has unique features with hover effects and figure captions as well. I have added the cards in column layout structure. I have added hover effect using .hover as well. I have styled the containers using webkit-box. 
+
+* **image** - using -o-object-fit in the css file, the image fits the whole card. 
+* **transform** - The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual 
+
+
+### Contact
+
+Finally, this page let's the user connect with me via email or telephone. Features of HTML like tel and mailto in href tells the browser how to use the number.The number within the quotes is the number it will call. similarly with mailto option the default email app on the user's computer opens and suggests sending a message to the email address mentioned in the Mailto link.
+
+
 
