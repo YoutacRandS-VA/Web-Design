@@ -38,6 +38,11 @@ This page has unique features with hover effects and figure captions as well. I 
 
 Finally, this page let's the user connect with me via email or telephone. Features of HTML like tel and mailto in href tells the browser how to use the number.The number within the quotes is the number it will call. similarly with mailto option the default email app on the user's computer opens and suggests sending a message to the email address mentioned in the Mailto link.
 
+All input elements are covered by the contact page. Using attribute selectors, you can only style a specific input type. I ahv used input[type=number] and input[type=text] for the phone number and text message.
+
+I have also added media queries which are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhones and Android phones). 
+
+@media (max-width:1200px) is used to set different widths of screens. Which let's us to open the website in different screens and also asjust other properties.
 
 ### Student Information
 =======================
