@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdjns.cloud.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script href="bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+    // $(document).ready(function () {
+    //   $("#myInput").on("keyup", function () {
+    //     var value = $(this).val.toLowerCase();
+    //     $("#myTable tr").filter(function () {
+    //       $(this).toggle($(this).text().toLocaleLowerCase().indexOf(value) > -1)
+    //     })
+    //   })
+    // }
+    // )
+    </script>
+
+</head>
+
+<body style="background:
+linear-gradient(rgb(67, 84, 93),transparent),
+linear-gradient(to top left, rgb(147, 195, 216), transparent),
+linear-gradient(to top right, rgb(26, 37, 40), transparent);
+padding-top: 5rem;
+">
+
+    <!-- NAVBAR -->
+    <div id="Header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="section1.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="section2.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="section4.html">Projects</a></li>
+
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" id="myInput" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <div id="bg-img"> </div>
+
+    <div id="sec4">
+        <h1 class="heading"><span>my</span> work</h1>
+        <div class="container" id="section1" style="padding-top: 0px; ">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imgs/skills.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-bottom: 10px;">Weak Signals</h5>
+                            <p class="card-text">Developed a tableau dashboard that helps deep dive into the rising
+                                issues
+                                in anticipating future changes in
+                                organizational environments which could help the product quality/contact center teams to
+                                be
+                                prepared prior to the issue. Handled the
+                                data required to create it using the Term extraction package - PYATE</p>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(58, 43, 43); border-color: black;">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imgs/tableau.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Surge pipeline</h5>
+                            <p class="card-text">Executed a python pipeline that handles incremental data loads on a
+                                weekly
+                                basis.Built a python pipeline for detecting emerging error codes that may become
+                                significant
+                                in the future using Telemetry data coming
+                                from the different HP printers across the globe and created a dataset for the same.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(58, 43, 43); border-color: black;">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imgs/text.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">NLP</h5>
+                            <p class="card-text">Performed natural language processing and sentiment analysis on text
+                                data
+                                from different social media platforms using Python.
+                                Worked on a Bert model using PyTorch to predict three levels of topics from customer
+                                reviews.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: rgb(58, 43, 43); border-color: black;">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

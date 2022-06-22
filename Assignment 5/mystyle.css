@@ -1,0 +1,167 @@
+body{
+    /* background: rgb(47, 48, 49); */
+    margin-top: 6rem;
+    padding-bottom: 6.5rem;
+    background:
+        linear-gradient(rgb(67, 84, 93),transparent),
+        linear-gradient(to top left, rgb(147, 195, 216), transparent),
+        linear-gradient(to top right, rgb(26, 37, 40), transparent);
+    background-blend-mode: screen;
+}
+
+#Header a:hover{
+    color: rgb(201, 198, 171);
+}
+
+#bg-img{
+    background: url('./imgs/bgimg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+#About{
+    margin-top: -300px;
+}
+#sec2{
+    margin-top: -500px;
+}
+#sec4{
+    margin-top: -500px;
+}
+
+#sec1{
+    margin-top: -500px;
+}
+
+#About .fab{
+    color: black;
+}
+
+#sec2 .fab{
+    color: black;
+}
+
+
+
+
+/* #About #media .imag{
+    margin-top: 20rem;
+    height: 50rem;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+} */
+
+.about #list-group{
+    font-size: 4rem;
+    color: rgb(173, 156, 134);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .info-container{
+    flex: 1 1 42rem;  
+}
+
+.about .row .info-container h1{
+    font-size: 4rem;
+    color: rgb(27, 74, 112);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+
+}
+
+.about .row .info-container .box-container{
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.about .row .info-container .box-container .box{
+    flex: 1 1 20rem;
+
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: rgb(19, 73, 86);
+}
+
+.heading{
+    text-align: center;
+    font-size: 6vw;
+    color: rgb(26, 85, 96);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+
+.about .row .info-container .box-container .box h3{
+    font-size: 1rem;
+    color: rgb(107, 55, 21);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info-container h1{
+    font-size: 1.2rem;
+    color: rgb(69, 32, 72);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info-container .box-container .box h3 span{ 
+    color: rgb(32, 77, 92);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .count-container{
+    flex: 1 1 42rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .count-container .box{
+    flex: 1 1 20rem;
+    padding: 3rem 4rem;
+    border-radius: .5rem;
+    background: rgb(89, 121, 134);
+    box-shadow: rgb(180, 172, 161);
+
+}
+.about .row .count-container .box h3{
+    font-size: 4rem;
+    color: rgb(207, 193, 176);
+
+}
+
+.about .row .count-container .box p{
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(26, 37, 40);
+}
+
+
+/* section{
+    padding: 5rem 9%;
+} */
+.heading span{
+    text-transform: uppercase;
+    color: rgb(166, 204, 214);
+}
+
+.section2 .form-row form {
+    margin-top: 10rem ;
+  }

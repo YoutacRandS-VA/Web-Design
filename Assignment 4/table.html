@@ -1,0 +1,112 @@
+<!doctype html>
+<head>
+    <title>Table</title> 
+    <style>
+        #container{
+			width: 700px;
+			margin-left: auto;
+            margin-right: auto;
+			background-color: beige;
+            text-align: center;
+		} 
+    </style>  
+</head>
+
+<body onload="getData()">
+    <div id="container">
+        <table border="1" bgcolor="beige">
+            <caption><H2>Feedback</H2></caption>
+            <tr>
+                <td>Title</td>
+                <td id="title"></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td id="firstName"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td id="lastName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td id="phoneNumber"></td>
+            </tr>
+            <tr>
+                <td>Street Address1</td>
+                <td id="streetAddress1"></td>
+            </tr>
+            <tr>
+                <td>Street Address2</td>
+                <td id="streetAddress2"></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td id="city"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td id="state"></td>
+            </tr>
+            <tr>
+                <td>Zipcode</td>
+                <td id="zipcode"></td>
+            </tr>
+            <!-- <tr>
+                <td>How did you hear</td>
+                <td id="hear"></td>
+            </tr> -->
+            <tr>
+                <td>how did you hear?</td>
+                <td id="hear"></td>
+            </tr>
+            <tr>
+                <td>More Details</td>
+                <td id="example"></td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td id="comments"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function getData(){
+            document.getElementById("title").innerHTML = localStorage.getItem("title");
+            document.getElementById("firstName").innerHTML = localStorage.getItem("firstName");
+            document.getElementById("lastName").innerHTML = localStorage.getItem("lastName");
+            document.getElementById("email").innerHTML = localStorage.getItem("emailId");
+            document.getElementById("phoneNumber").innerHTML = localStorage.getItem("phoneNumber");
+            document.getElementById("zipcode").innerHTML = localStorage.getItem("zipcode");
+            document.getElementById("streetAddress1").innerHTML = localStorage.getItem("streetAddress1");
+            document.getElementById("streetAddress2").innerHTML = localStorage.getItem("streetAddress2");
+            document.getElementById("city").innerHTML = localStorage.getItem("city");
+            document.getElementById("state").innerHTML = localStorage.getItem("state");
+            document.getElementById("hear").innerHTML = localStorage.getItem("hear");
+            document.getElementById("comments").innerHTML = localStorage.getItem("comments");
+            // document.getElementById("way").innerHTML = localStorage.getItem("way");
+            document.getElementById("example").innerHTML = localStorage.getItem("example");
+            document.getElementById("comments").innerHTML = localStorage.getItem("comments");
+
+//             document.getElementById('firstName').value='';
+//   document.getElementById('lastName').value='';
+//   document.getElementById('emailId').value='';
+//   document.getElementById('phoneNumber').value='';
+//   document.getElementById('streetAddress1').value='';
+//   document.getElementById('streetAddress2').value='';
+//   document.getElementById('city').value='';
+//   document.getElementById('state').value='';
+//   document.getElementById('zipcode').value='';
+//   document.getElementById('selected_drinks_extra').value='';
+//   document.getElementById('checked-message').value='';
+//   document.getElementById('comments').value='';
+
+        }
+
+        </script>
+    </body>
+    </html>

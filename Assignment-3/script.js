@@ -16,6 +16,7 @@ var socialMedia = {
 };
 
 var t = new Title("CONNECT WITH ME!");
+var imgFlag = false;
 
 function addRow() {
   alert("Record added successfully!")
@@ -43,6 +44,8 @@ function addRow() {
   budCell.innerHTML = "12345";
   var perCell = document.createElement("td");
   perCell.innerHTML = "100%";
+  var delCell = document.createElement("td");
+  var editCell = document.createElement("td");
   row.appendChild(checkCell);
   row.appendChild(stuCell);
   row.appendChild(advCell);
@@ -51,6 +54,8 @@ function addRow() {
   row.appendChild(typCell);
   row.appendChild(budCell);
   row.appendChild(perCell);
+  // row.appendChild(delCell);
+  // row.appendChild(perCell);
   tbodyRef.appendChild(row);
 
   }
@@ -60,7 +65,7 @@ function addRow() {
 
 }
 
-
+var count = 0;
 function checkboxOnclick(checkbox) {
 
   var r = checkbox.parentElement.parentElement; //tr
@@ -95,15 +100,22 @@ function checkboxOnclick(checkbox) {
 
 function deleteRow(obj) {
   var tr = obj.parentElement.parentElement;
+  var subTr = obj.parentElement.parentElement.nextElementSibling;
   document.getElementById("myTable").deleteRow(tr.rowIndex);
-  // document.getElementById("myTable").deleteRow(tr.rowIndex);
+  if(count1 != 0)
+  document.getElementById("myTable").deleteRow(subTr.rowIndex);
+  // document.getElementById("myTable").deleteRow(td.rowIndex);
 
   count--;
   if (count == 0) {
     document.getElementById("button").disabled = true;
-    document.getElementById("button").style.backgroundColor = "initial";
+    document.getElementById("button").style.backgroundColor = "gray";
     }
-    alert("Record deleted successfully!")
+
+    document.getElementById("button").disabled = true;
+    document.getElementById("button").style.backgroundColor = "gray"
+    alert("Record deleted successfully!");
+    count1 = 0;
   }
 
 function editRow(obj) {
@@ -131,6 +143,7 @@ function insertAfter(newEl, targetEl) {
 
 var count1 = 0;
 function imgOnClick(obj) {
+  this.imgFlag = !this.imgFlag;
   if (count1 == 0) {
     var tr = obj.parentNode.parentNode;
     var newrow = document.createElement("tr");
@@ -141,10 +154,13 @@ function imgOnClick(obj) {
     newrow.appendChild(col);
     insertAfter(newrow, tr);
     count1++;
-  } else {
+  } 
+  else {
     var index = obj.parentNode.parentNode.rowIndex;
     var table = document.getElementById("myTable");
     table.deleteRow(index + 1);
+    document.getElementById("button").disabled = true;
+    document.getElementById("button").style.backgroundColor = "gray";
     count1 = 0;
-  }
+    }
 }
