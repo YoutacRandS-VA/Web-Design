@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+    </script>
+    <title>Document</title>
+</head>
+<body style="background-color: antiquewhite;"> 
+    <h2>Calculator</h2>
+    <h3>Username: <span id="farmer"></span> </h3>
+
+
+    <label for="num1">Number 1 :</label>
+    <input name="num1" id="num1" type="text" placeholder="Please enter a number" class="contact-input"><br><br>
+    <label for="num2">Number 2 :</label>
+    <input name="num2" id="num2" type="text" placeholder="Please enter a number" class="contact-input"><br><br>
+    <!-- <label for="num3">Number 3 :</label>
+    <input name="num3" id="num3" type="text" placeholder="Please enter your name" class="contact-input"><br><br> -->
+
+    <button id="add" class="clicked-button">Add</button>
+        <button id="subtract" class="clicked-button">Subtract</button>
+        <button id="multiply" class="clicked-button">Multiply</button>
+        <button id="divide" class="clicked-button">Divide</button><br><br>
+    <!-- <button class="btn op" id="add">Subtract</button>
+    <button class="btn op" id="add">Divide</button>
+    <button class="btn op" id="add">Multiply</button><br><br> -->
+
+    <input type="text" value="" class="field left" id = 'total' readonly>
+    <span class="error" id="invalid_email">please enter valid numbers</span><br>
+
+
+
+    <script src="./cal.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<h2>Calculator</h2>
+
+<body style="background-color: antiquewhite;">
+    <form method="POST" action="./secondpage.html" id="myform">
+        <label for="name">Username :</label>
+        <input name="name" id="name" type="text" placeholder="enter your username" class="contact-input" required><br>
+        <span class="error">please enter valid username here</span><br>
+        <label for="email">Email :</label>
+        <input name="email" id="email" type="text" placeholder="Please enter your email" class="contact-input" required>
+        <span class="error">Enter your email-id here</span><br>
+        <span class="error" id="invalid_email">Email-id is invalid</span><br>
+        <label for="password">Password :</label>
+        <input name="password" id="password" type="text" placeholder="Please enter your password" class="contact-input" required>
+        <span class="error">Enter your password here</span><br>
+        <span class="error" id="invalid_pwd">password is invalid</span><br>
+        <input type="submit" class="" id="submit" value="Submit" onclick="checkform()" />
+
+
+    </form>
+
+    <script type='text/javascript'>
+
+        function checkform(){
+            var farmerID=document.getElementById("name").value;
+            localStorage.setItem("id", farmerID);
+
+        
+            if(document.getElementById("email").value != '' & document.getElementById("password").value != '' &  IsEmail(document.getElementById("email").value) ==true){
+                alert("Login Successful");
+                window.location.assign("secondpage.html")
+            }else{
+                alert("please enter valid username and password is required.");
+            }
+        }
+    </script>
+    <!-- <a href="secondpage.html"><input type="submit" class="" id="submit" value="Submit" /></a> -->
+    <!-- <input type="reset" class="contactform-buttons" id="reset" value="Reset" /> -->
+    
+    <!-- <button  type="submit"  id="submit" value="Submit"><a href="secondpage.html"></button> -->
+    <div id="correct" style="color:gray;"></div>
+    <script src="./arrow.js"></script>
+
+</body>
+
+</html>
