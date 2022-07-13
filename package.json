@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.53.0"
+  },
+  "scripts": {
+    "sass": "node-sass -w css/style.scss -o css/main.css --recursive"
+    }
+}
