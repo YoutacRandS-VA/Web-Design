@@ -1,9 +1,12 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const router = express.Router(); 
+
 
 //Set up default mongoose connection
-var mongoDB = "mongodb://127.0.0.1/my_database";
+var mongoDB = "mongodb://localhost:27017/my_database";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.set("useNewUrlParser", true);
@@ -45,6 +48,28 @@ var UserSchema = new Schema({
     ],
   },
 });
+
+UserSchema.pre('save',function(next){
+  if(this.isModified('Password')){
+    bcrypt.hash(this.Password,10,(err,hash) =>{
+      if(err) return next(err);
+      this.Password = hash;
+      next();
+    })
+  }
+})
+
+UserSchema.methods.comparePassword = async function (Password){
+  if(!Password) throw new Error("Password is missing,can't compare!");
+
+  try{
+    const result = await bcrypt.compare(Password,this.Password)
+    return result;
+  }catch(error){
+    console.log('Error while comparing',error.message)
+
+  }
+}
 
 var UserModel = mongoose.model("UserModel", UserSchema);
 
@@ -99,7 +124,7 @@ app.post("/user/edit", bodyParser.json(), (req, res) => {
         return;
       }
     }
-  }
+  } else{
 
   UserModel.find({ Email: req.body.Email }, function (err, count) {
     console.log("c ", count);
@@ -142,6 +167,7 @@ app.post("/user/edit", bodyParser.json(), (req, res) => {
       );
     }
   });
+}
 });
 
 app.get("/user/getAll", bodyParser.json(), (req, res) => {
