@@ -12,7 +12,7 @@ I have used react components like map to iterate over the cards of the restauran
 About us page extends component which includes different cards of different people in the organization.
 
 # Jobs 
-in this section we 
+in this section I have implemented a grid layoiut throught with different cards for different jobs.
 
 
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, NavLink, HashRouter, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Jobs from "./pages/Jobs";
+import Home from "./pages/Home/Home";
+import AboutUs from "./pages/About/AboutUs";
+import ContactUs from "./pages/Contact/ContactUs";
+import Jobs from "./pages/Jobs/Jobs";
 
 class App extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class App extends React.Component {
       <HashRouter>
         <div>
           <div>
-            <h1>First React Lab</h1>
+            <h1>Welcome to my website!</h1>
             <ul className="header">
               <li>
                 <NavLink to="/">Home</NavLink>
